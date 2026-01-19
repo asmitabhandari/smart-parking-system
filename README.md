@@ -17,9 +17,6 @@ AI-Powered License Plate Recognition for Parking Management
 - **Frontend:** React
 - **Database:** PostgreSQL
 
-## 📸 Screenshots
-
-[Add screenshots here]
 
 ## 🚀 Installation
 
@@ -27,4 +24,4 @@ See full setup instructions in the documentation.
 
 ## 👨‍💻 Author
 
-[Your Name] - [Your University]
+Asmita Bhandari - Wayne State University
