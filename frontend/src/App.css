@@ -1,0 +1,145 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Soft, very light grey background */
+  background-color: #f8fafc; 
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;    /* Vertical Center */
+  justify-content: center; /* Horizontal Center */
+  padding: 20px;
+}
+
+.kiosk-container {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.kiosk-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+}
+
+/* Header */
+.kiosk-header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left; /* Keep header text aligned to sides */
+}
+
+/* Centering the Main Content */
+.kiosk-main {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the card horizontally */
+  justify-content: center; /* Centers the card vertically */
+  text-align: center; /* Centers all text inside the card */
+}
+
+.kiosk-card {
+  width: 100%;
+  max-width: 600px;
+}
+
+.card-header h2 {
+  font-size: 2.2rem;
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+.card-header p {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* Tabs */
+.kiosk-tabs {
+  display: flex;
+  background: #f1f5f9;
+}
+
+.kiosk-tab {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: #64748b;
+  transition: 0.3s;
+}
+
+.kiosk-tab.active {
+  background: white;
+  color: #1e3c72;
+  border-bottom: 4px solid #ffd700;
+}
+
+/* Inputs */
+.kiosk-input, .kiosk-select {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.3rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  margin-top: 10px;
+  text-align: center; /* Centers text inside input */
+  background: #fdfdfd;
+}
+
+.kiosk-button.primary {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Alerts and Display */
+.location-display {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f0fdf4;
+  border-radius: 15px;
+  border: 1px solid #bbf7d0;
+}
+
+.location-value {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1e3c72;
+}
+
+/* Footer */
+.kiosk-footer {
+  padding: 20px;
+  background: #f8fafc;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
